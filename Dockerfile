@@ -111,7 +111,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/home/jenk
 
 
 #RUN /home/jenkins/composer.phar --working-dir="/home/jenkins"  config -g repo.packagist composer.phar https://packagist.phpcomposer.com
-RUN /home/jenkins/composer.phar --working-dir="/home/jenkins" -n require --dev  phpunit/phpunit:~5.0 squizlabs/php_codesniffer:3.* phploc/phploc  pdepend/pdepend:2.5.0   phpmd/phpmd:~2.6.0  sebastian/phpcpd theseer/phpdox
+RUN /home/jenkins/composer.phar --working-dir="/home/jenkins" -n require --dev  phpunit/phpunit:^5 squizlabs/php_codesniffer:3.* phploc/phploc  pdepend/pdepend:2.5.0   phpmd/phpmd:~2.6.0  sebastian/phpcpd theseer/phpdox
 
 
 
